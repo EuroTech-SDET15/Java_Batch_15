@@ -1,4 +1,4 @@
-package day2;
+package day3;
 
 public class SecondDay {
 
