@@ -35,7 +35,8 @@ public class RelationalOprPractice {
         int actualNum = 15;
         int expectedNum = 10;
 
-        boolean testResult = (actualNum > expectedNum);
+        boolean testResult
+                = (actualNum > expectedNum);
         System.out.println("testResult = " + testResult);
 
         testResult = actualNum < expectedNum;
