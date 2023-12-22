@@ -34,7 +34,7 @@ public class SwitchCase_4 {
         //scanner
         //input from user
 
-        switch (month){
+        switch (month) {
             // january february december ===> season=winter
             // march april may ===> spring
             // june july august ===> summer
@@ -43,9 +43,8 @@ public class SwitchCase_4 {
             //print season
 
 
-
-
         }
+
 
 
     }
