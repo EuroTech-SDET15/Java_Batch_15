@@ -15,7 +15,6 @@ public class Calculation {
         //codingbat sumDouble,make10, postNeg, or35,icyHot, in1020
         // add a and b check the result is odd or not    double add(a,b)   boolean odd(a,b)  void printOddEven(a,b)
 
-
     }
 
     //add(int a,int b)-->return a+b
