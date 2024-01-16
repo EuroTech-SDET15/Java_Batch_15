@@ -18,7 +18,6 @@ public class Calculation {
         System.out.println("Math.abs('A') = " + Math.abs('A'));
 
     }
-
     public static void sum(int a, int b) {
         System.out.println(a + b);
     }
