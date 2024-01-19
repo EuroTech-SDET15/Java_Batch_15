@@ -7,7 +7,7 @@ public class Car {
     int regYear;
     int doorNumber;
     int age;
-    int speed;
+    int topSpeed;
 
 
     //methods

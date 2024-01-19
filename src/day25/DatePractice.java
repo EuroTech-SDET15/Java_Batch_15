@@ -37,7 +37,6 @@ public class DatePractice {
 
         Date date= new Date();
         System.out.println("date=  " + formatDateToString(date, "YYYY-MM-DD", "GMT"));
-
     }
 
 
