@@ -1,5 +1,7 @@
 package day40;
 
+import day51.interfaces.Storage;
+
 public class Builder {
     public static void main(String[] args) {
 
@@ -36,7 +38,7 @@ public class Builder {
         System.out.println(reverseString(str));
         String reversed = reverseString("Ali");
         System.out.println("reversed = " + reversed);//ilA
-
+        System.out.println("Storage.city = " + Storage.city);
     }
 
     public static String reverseString(String var) {
