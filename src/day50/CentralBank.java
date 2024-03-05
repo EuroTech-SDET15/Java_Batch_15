@@ -64,7 +64,7 @@ public abstract class CentralBank {
     }
 
     //////////////// SETTERs \\\\\\\\\\\\\\\\\
-    protected void setDepositBonus(double depositBonus) {
+    public void setDepositBonus(double depositBonus) {
         this.depositBonus = depositBonus;
     }
 
@@ -77,6 +77,30 @@ public abstract class CentralBank {
     }
 
     //////////////// FUNCTIONs \\\\\\\\\\\\\\\\\
+
+    public void initAccountValues(double goldBonus,double goldExpense, double goldReturn,
+                                  double savingBonus,double savingExpense, double savingReturn,
+                                  double interestBonus,double interestExpense, double interestReturn) {
+        switch (accountType.toUpperCase()) {
+            case "GOLD":
+                setDepositBonus(goldBonus);
+                setWithdrawExpense(goldExpense);
+                setReturnRate(goldReturn);
+                break;
+            case "SAVING":
+                setDepositBonus(savingBonus);
+                setWithdrawExpense(savingExpense);
+                setReturnRate(savingReturn);
+                break;
+            case "INTEREST":
+                setDepositBonus(interestBonus);
+                setWithdrawExpense(interestExpense);
+                setReturnRate(interestReturn);
+                break;
+            default:
+                System.out.println("INVALID ACCOUNT!!");
+        }
+    }
 
     public void deposit(double depositValue) {
         this.currentBalance += depositValue;

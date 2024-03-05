@@ -5,29 +5,13 @@ public class AkBank extends CentralBank {
 
     public AkBank(String accountType, double currentBalance) {
         super("AkBank", accountType, currentBalance, 120);
+        initAccountValues(AkAccountType.GOLD.getDepositBonus(), 70,1.3,
+                90,60,1.2,
+                100,50,1.1);
 
-        switch (accountType.toUpperCase()) {
-            case "GOLD":
-                setDepositBonus(80);
-                setWithdrawExpense(70);
-                setReturnRate(1.3);
-                break;
-            case "SAVING":
-                setDepositBonus(90);
-                setWithdrawExpense(60);
-                setReturnRate(1.2);
-                break;
-            case "INTEREST":
-                setDepositBonus(100);
-                setWithdrawExpense(50);
-                setReturnRate(1.1);
-                break;
-            default:
-                System.out.println("INVALID ACCOUNT!!");
                 // TODO TASK-2 try to make this switch more dynamic like only do initialize in parent  etc..
                 // TODO TASK-3 user must continue program with valid account name... so do related updates
 
-        }
     }
 
     @Override
