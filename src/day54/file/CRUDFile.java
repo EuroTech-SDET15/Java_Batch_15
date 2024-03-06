@@ -6,12 +6,20 @@ import java.util.Scanner;
 public class CRUDFile {
     public static void main(String[] args) throws IOException {
      //   File file = new File("src\\day54\\file\\text.txt");
-        File file = new File("C:\\Users\\ahmet\\IdeaProjects\\" +
-                "Java_Batch_15\\src\\day54\\file\\text.txt");
-        if (!file.exists()) {
-            file.createNewFile();
-        }
+
+        System.out.println("Project location " + System.getProperty("user.dir"));
+
+        String dynamicProjectPath= System.getProperty("user.dir");
+        File file = new File(dynamicProjectPath +
+                "\\src\\day55\\file\\text.txt");
+//        if (!file.exists()) {
+//            file.createNewFile();
+//        }
         System.out.println("file.getAbsoluteFile() = " + file.getAbsoluteFile());
+
+        int number;
+        String value = "dadsd";
+        // do some actions!!
 
         FileWriter writer = new FileWriter(file, true);
         writer.write("Hello!!!!");
