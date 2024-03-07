@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class CRUDFile {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException{
      //   File file = new File("src\\day54\\file\\text.txt");
 
         System.out.println("Project location " + System.getProperty("user.dir"));
