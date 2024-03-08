@@ -5,7 +5,6 @@ public class protectYourCode {
     public static void main(String[] args) {
         divisionCalculator(1, 1);
         divisionCalculator(1, 0);
-
     }
 
     public static void divisionCalculator(int num1, int num2) {
